@@ -15,6 +15,7 @@ public class ServicePoint {
 
     public void serve() {
         while (!queue.isEmpty()) {
+
             Customer c = removeFromQueue();
             long serviceStart = System.currentTimeMillis();
 
